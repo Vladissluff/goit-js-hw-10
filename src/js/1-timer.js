@@ -64,7 +64,7 @@ function updateTimer() {
     return;
   }
   const { days, hours, minutes, seconds } = convertMs(timeLeft);
-  daysSpan.textContent = days;
+  daysSpan.textContent = addLeadingZero(days);  
   hoursSpan.textContent = addLeadingZero(hours);
   minutesSpan.textContent = addLeadingZero(minutes);
   secondsSpan.textContent = addLeadingZero(seconds);
